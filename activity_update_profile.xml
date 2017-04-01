@@ -1,3 +1,4 @@
+ //designing of update profile for user//
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/fullscreen_content_controls"
     android:layout_width="fill_parent"
