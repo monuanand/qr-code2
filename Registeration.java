@@ -1,3 +1,4 @@
+ //user registration page//
 package com.example.user;
 
 import android.app.Activity;
