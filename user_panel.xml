@@ -1,5 +1,6 @@
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     //design of user panel//
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/LinearLayout1"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
@@ -14,28 +15,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/txtResult"/>
-
+//user profile button//
         <Button
     android:id="@+id/button11"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:onClick="profile"
     android:text="Profile" />
-
+//user update profile button//
         <Button
             android:text="Update Profile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="updateProfile"
             android:id="@+id/button6"/>
-
+//scanner button//
         <Button
             android:text="Scan QRCode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="scanQRCode"
             android:id="@+id/button4"/>
-
+//log out button//
         <Button
             android:text="Logout"
             android:onClick="signout"
