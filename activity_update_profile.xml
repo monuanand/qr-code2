@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fullscreen_content_controls"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etFirstName"
+        android:layout_alignParentTop="true"
+        android:text="@string/tvTitle1"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnUpdate"
+        android:layout_alignBottom="@+id/btnUpdate"
+        android:layout_alignRight="@+id/etaddress"
+        android:text="@string/srtCancel" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etaddress"
+        android:layout_toLeftOf="@+id/btnCancel"
+        android:text="@string/btnSubmit" />
+
+    <TextView
+        android:id="@+id/tvdisplayDeducatbleTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textColor="@android:color/white"
+        android:layout_alignBaseline="@+id/etLastname"
+        android:layout_alignBottom="@+id/etLastname"
+        android:layout_alignParentLeft="true"
+        android:text="@string/etLastName" />
+
+    <TextView
+        android:id="@+id/tvWelcomeAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textColor="@android:color/white"
+        android:layout_alignBaseline="@+id/etFirstName"
+        android:layout_alignBottom="@+id/etFirstName"
+        android:layout_alignParentLeft="true"
+        android:text="@string/etFirstName" />
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="28dp"
+        android:layout_toRightOf="@+id/tvWelcomeAdmin"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/etFirstName"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etLastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etFirstName"
+        android:layout_below="@+id/etFirstName"
+        android:ems="10"
+        android:hint="@string/etLastName"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etusername1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etLastname"
+        android:layout_below="@+id/etLastname"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/etUsername"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etfathername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etusername1"
+        android:layout_below="@+id/etusername1"
+        android:ems="10"
+        android:hint="@string/etFatherName"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etemailid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etfathername"
+        android:layout_below="@+id/etfathername"
+        android:ems="10"
+        android:hint="@string/etEmailid"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etmobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etemailid"
+        android:layout_below="@+id/etemailid"
+        android:ems="10"
+         android:enabled="false"
+        android:hint="@string/etMobile"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/etaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etmobile"
+        android:layout_below="@+id/etmobile"
+        android:ems="10"
+        android:hint="@string/etAddress"
+        android:inputType="textPostalAddress" />
+
+    <TextView
+        android:id="@+id/tvDeductableAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_alignBaseline="@+id/etusername1"
+        android:layout_alignBottom="@+id/etusername1"
+        android:layout_alignParentLeft="true"
+        android:text="@string/etUsername" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textColor="@android:color/white"
+        android:layout_alignBaseline="@+id/etfathername"
+        android:layout_alignBottom="@+id/etfathername"
+        android:layout_alignParentLeft="true"
+        android:text="@string/etFatherName" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textColor="@android:color/white"
+        android:layout_alignBaseline="@+id/etemailid"
+        android:layout_alignBottom="@+id/etemailid"
+        android:layout_alignParentLeft="true"
+        android:text="@string/etEmailid" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textColor="@android:color/white"
+        android:layout_alignBaseline="@+id/etmobile"
+        android:layout_alignBottom="@+id/etmobile"
+        android:layout_alignParentLeft="true"
+        android:text="@string/etMobile" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textColor="@android:color/white"
+        android:layout_alignBaseline="@+id/etaddress"
+        android:layout_alignBottom="@+id/etaddress"
+        android:layout_alignParentLeft="true"
+        android:text="@string/etAddress" />
+
+</RelativeLayout>
